@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { MainPage, ComicsPage, Page404, SingleComicPage} from "../pages";
 
 
@@ -6,7 +6,7 @@ import AppHeader from '../appHeader/AppHeader';
 
 const App = () => {
         return (
-            <Router>
+            <Router basename="/">
                 <div className="app">
                     <AppHeader/>
                     <main>
